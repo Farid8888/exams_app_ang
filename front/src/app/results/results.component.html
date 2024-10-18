@@ -26,7 +26,7 @@
       <ul *ngFor="let exam of exams">
           <li>Dərsin kodu: {{exam?.courseCode}}</li>
           <li>Şagirdin nömrəsi: {{exam?.studentNumber}}</li>
-          <li>İmtahan tarixi: {{exam?.examDate}}</li>
+          <li>İmtahan tarixi: {{exam?.examDate | date:'shortDate'}}</li>
           <li>İmtahan qiyməti: {{exam?.score}}</li>
       </ul>
   </div>

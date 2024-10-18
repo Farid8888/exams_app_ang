@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ResultService} from './result.servise';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { DatePipe} from '@angular/common'
 
 @Component({
   selector: 'app-results',
