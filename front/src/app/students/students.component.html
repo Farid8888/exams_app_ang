@@ -1,0 +1,18 @@
+<div>
+  <h2>Şagirdlər</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" ngNativeValidate>
+    <label for="sNumber">Şagirdin nömrəsi</label>
+    <input required type="number" id="sNumber" max="99999" formControlName="studentNumber" placeholder="Şagirdin nömrəsini daxil edin">
+
+    <label for="sName">Şagirdin adı</label>
+    <input required maxlength="30" type="text" id="sName" formControlName="firstName" placeholder="Şagirdin adını daxil edin">
+
+    <label for="sLastName">Şagirdin soyadı</label>
+    <input required maxlength="30"  id="sLastName" type="text"  formControlName="lastName" placeholder="Şagirdin soyadını daxil edin"/>
+    
+    <label for="cRoom">Sinifi</label>
+    <input required  id="cRoom" type="number" step="any" max="99.40"  formControlName="classRoom" placeholder="Sinifi daxil edin"/>
+  
+    <input type="submit" value="Təsdiqlə"  >
+  </form>
+</div>

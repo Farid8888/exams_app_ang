@@ -1,0 +1,21 @@
+
+<div>
+  <h2>Dərslər</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" ngNativeValidate>
+    <label for="cCode">Dərsin kodu</label>
+    <input required maxlength="3" type="text" id="cCode" formControlName="courseCode" placeholder="Kodu daxil edin">
+
+    <label for="cName">Dərsin adı</label>
+    <input required maxlength="30" type="text" id="cName" formControlName="courseName" placeholder="Dərsi daxil edin">
+
+    <label for="cRoom">Sinifi</label>
+    <input required  id="cRoom" type="number" step="any" max="99.40"  formControlName="classRoom" placeholder="Sinifi daxil edin"/>
+    <label for="tFirstName">Müəllimin adı </label>
+    <input required maxlength="20" id="tFirstName" formControlName="teacherFirstName" placeholder="Müəllimin adını daxil edin"/>
+
+    <label for="tLastName">Müəllimin soyadı </label>
+    <input required maxlength="20" id="tLastName" formControlName="teacherLastName" placeholder="Müəllimin soyadını daxil edin"/>
+  
+    <input type="submit" value="Təsdiqlə"  >
+  </form>
+</div>

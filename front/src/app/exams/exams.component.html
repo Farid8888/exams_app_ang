@@ -1,0 +1,18 @@
+<div>
+  <h2>İmtahanlar</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" ngNativeValidate>
+    <label for="cCode">Dərsin kodu</label>
+    <input required maxlength="3" type="text" id="cCode" formControlName="courseCode" placeholder="Kodu daxil edin">
+
+    <label for="sNumber">Şagirdin nömrəsi</label>
+    <input required type="number" id="sNumber" max="99999" formControlName="studentNumber" placeholder="Şagirdin nömrəsini daxil edin">
+
+    <label for="eDate">İmtahan tarixi</label>
+    <input required  id="eDate" type="date"  formControlName="examDate" placeholder="İmtahan tarixini daxil edin"/>
+    
+    <label for="eScore">Imtahan qiyməti</label>
+    <input required  id="eScore" type="number"  max="9"  formControlName="score" placeholder="Imtahan qiymətini daxil edin"/>
+  
+    <input type="submit" value="Təsdiqlə"  >
+  </form>
+</div>

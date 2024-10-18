@@ -1,0 +1,37 @@
+<div class="main">
+<div class="container">
+  <div class="column">
+      <h3>Dərslər</h3>
+      <ul *ngFor="let course of courses">
+          <li>Dərsin kodu:{{course?.courseCode}}</li>
+          <li>Dərsin adı: {{course?.courseName}}</li>
+          <li>Sinifi: {{course?.classRoom}}</li>
+          <li>Müəllimin adı: {{course?.teacherFirstName}}</li>
+          <li>Müəllimin soyadı: {{course?.teacherLastName}}</li>
+      </ul>
+  </div>
+
+  <div class="column">
+      <h3>Şagird</h3>
+      <ul *ngFor="let student of students">
+          <li>Şagirdin nömrəsi: {{student?.studentNumber}}</li>
+          <li>Şagirdin adı: {{student?.firstName}}</li>
+          <li>Şagirdin soyadı: {{student?.lastName}}</li>
+          <li>Sinifi:{{student?.classRoom}}</li>
+      </ul>
+  </div>
+
+  <div class="column">
+      <h3>İmtahan</h3>
+      <ul *ngFor="let exam of exams">
+          <li>Dərsin kodu: {{exam?.courseCode}}</li>
+          <li>Şagirdin nömrəsi: {{exam?.studentNumber}}</li>
+          <li>İmtahan tarixi: {{exam?.examDate}}</li>
+          <li>İmtahan qiyməti: {{exam?.score}}</li>
+      </ul>
+  </div>
+</div>
+<div class="btn">
+  <button type="button" (click)="back()">Əvəllə qayıt</button>
+</div>
+</div>
